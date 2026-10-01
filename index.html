@@ -113,6 +113,7 @@ video.gv{background:#fff;cursor:pointer}
 .lv-canvas{background:#fff}.lv-canvas canvas{display:block}.lv-foot{padding:6px 10px;color:var(--muted);font-size:.82rem;border-top:1px solid var(--line)}
 footer{color:var(--muted);font-size:.85rem;padding:30px 0 50px;border-top:1px solid var(--line)}
 @media(max-width:720px){.hero{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}h1{font-size:1.6rem}}
+.explainer{max-width:960px;margin:6px auto 30px}.explainer video{width:100%;height:auto;background:#0e1014;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.12)}
 .public-authors{margin:20px auto;line-height:1.7;max-width:900px}
 .public-authors p{margin:8px 0}.public-authors sup{font-size:.7em;margin-left:2px}
 .public-authors a{color:#1769aa;text-decoration:none}.public-authors a:hover,.public-authors a:focus-visible{text-decoration:underline}
@@ -136,7 +137,13 @@ footer{color:var(--muted);font-size:.85rem;padding:30px 0 50px;border-top:1px so
 <p class="author-notes">* This work was done during Chaoyi Zhou's internship at United Imaging Intelligence, Boston, MA, USA.<br>
 &dagger; Corresponding authors.</p>
 </div>
-<div class="public-links" aria-label="Paper links"><span aria-disabled="true">arXiv &mdash; to be added</span><a href="assets/SCOPE-4D.pdf" target="_blank" rel="noopener noreferrer">Paper</a></div>
+<div class="public-links" aria-label="Paper links"><span aria-disabled="true">arXiv &mdash; to be added</span><a href="assets/SCOPE-4D.pdf" target="_blank" rel="noopener noreferrer">Paper</a><a href="#video">Video</a></div>
+
+<section class="explainer" id="video" aria-label="Overview video">
+<video controls playsinline preload="metadata" poster="assets/scope4d_explainer_poster.jpg" width="1920" height="1080">
+<source src="assets/scope4d_explainer.mp4" type="video/mp4">
+</video>
+</section>
 
 <nav class="contrib" aria-label="Contributions">
 <a href="#data" class="cc cc-data"><span class="cn">1</span><span class="ct"><b>SCOPE-5K · Data</b><span>Curated endoscopic supervision and two new benchmarks</span></span></a>
